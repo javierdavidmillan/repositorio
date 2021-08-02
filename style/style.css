@@ -1,0 +1,290 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "area4"
+        "area5"
+        "area3"
+        "area6"
+        "area7"
+        "area8";
+}
+
+.familia {
+    grid-area: area5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.bodas {
+    grid-area: area4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.estudio {
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.nosotros {
+    grid-area: area6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.servicios {
+    grid-area: area7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.contacto {
+    grid-area: area8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 200px;
+    overflow: hidden;
+    background-color: black;
+}
+/* /////////////////////////////// MEDIA QUERY ///////////////////////////////*/
+
+/* /////////////// MOBILE /////////////*/
+
+@media (min-width: 576px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "area4"
+            "area5"
+            "area3"
+            "area6"
+            "area7"
+            "area8";
+    }
+
+    .familia {
+        grid-area: area5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .bodas {
+        grid-area: area4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .estudio {
+        grid-area: area3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .nosotros {
+        grid-area: area6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .servicios {
+        grid-area: area7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .contacto {
+        grid-area: area8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 200px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+
+}
+
+
+/* /////////////// TABLET START //////////////*/
+
+@media (min-width: 768px) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "area1 area2"
+            "area3 area4"
+            "area5 area6";
+    }
+
+    .familia {
+        grid-area: area3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .bodas {
+        grid-area: area2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .estudio {
+        grid-area: area1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .nosotros {
+        grid-area: area4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .servicios {
+        grid-area: area5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .contacto {
+        grid-area: area6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 250px;
+        overflow: hidden;
+        background-color: black;
+    }
+}
+
+/* /////////////// DESKTOP START  ////////////*/
+
+@media (min-width: 992px) {
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "area3 area4 area5"
+            "area6 area7 area8";
+    }
+
+    .familia {
+        grid-area: area5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .bodas {
+        grid-area: area4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .estudio {
+        grid-area: area3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .nosotros {
+        grid-area: area6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 400px;
+    }
+
+    .servicios {
+        grid-area: area7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 400px;
+    }
+
+    .contacto {
+        grid-area: area8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 400px;
+    }
+}

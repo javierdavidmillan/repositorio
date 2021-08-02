@@ -1,0 +1,23 @@
+/* BUTTONS */
+
+.button {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #404040;
+    box-sizing: border-box;
+
+    width: 200px;
+    color: #606060;
+    background-color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.button:hover {
+    background-color: #d8d8d8;
+    color: #606060;
+}

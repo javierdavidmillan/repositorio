@@ -1,0 +1,94 @@
+
+/* GALERIA */
+
+.galeria {
+    max-width: 100%;
+}
+
+.galeriaTitulos {
+    position: absolute;
+    z-index: 100;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    transition: all 300ms;
+}
+
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "area4 area5 area3"
+        "area6 area7 area8";
+}
+
+.familia {
+    grid-area: area3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.bodas {
+    grid-area: area4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.estudio {
+    grid-area: area5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.nosotros {
+    grid-area: area6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios {
+    grid-area: area7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    grid-area: area8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LINK IMAGENES */
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGENES */
+
+.blend {
+    opacity: 75%;
+    transition: all 700ms;
+}
+
+.blend:hover {
+    opacity: 50%;
+}

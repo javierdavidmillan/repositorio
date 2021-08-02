@@ -1,0 +1,78 @@
+/* //////////// BLOG //////////// */
+
+@mixin aling ($font-size, $line-height, $color) {
+    color: $color;
+    font-size: $font-size;
+    text-align: left !important;
+    line-height: $line-height;
+}
+
+.containerBlog {
+    max-width: 650px !important;
+    width: 100%;
+}
+
+.fotoBlog {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    &__location {
+        font: $fontSecundario;
+        @include aling(22px, 32px, $colorPrincipal);
+        margin-top: 0;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        margin-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    &__parrafo {
+        font: $fontSecundario;
+        font-weight: 400;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include aling(16px, 28px, $colorTerciario);
+    }
+
+    &__negrita {
+        font: $fontSecundario;
+        font-weight: 600;
+        font-style: italic;
+        @include aling(16px, 28px, $colorPrincipal);
+    }
+
+}
+
+blockquote {
+    position: relative;
+    text-align: left;
+}
+
+blockquote.icono {
+    padding: 0 0 0 70px;
+    position: relative;
+}
+
+/* COMILLAS */
+
+blockquote:before {
+    position: absolute;
+    content: "\201C";
+    color: #404040;
+    font-size: 120px;
+    width: 70px;
+    height: 70px;
+    bottom: 90px;
+    left: 0;
+    opacity: 40%;
+    font-family: sans-serif;
+}
+
+blockquote p {
+    @extend .row__parrafo;
+    position: relative;
+    font-style: italic;
+
+}
