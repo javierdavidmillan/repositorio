@@ -384,11 +384,14 @@ blockquote p {
   text-align: center; }
 
 /* /////////////// HEADER /////////////// */
-header {
-  background-color: #151515;
-  position: sticky;
-  top: 0px;
-  z-index: 2000; }
+.header {
+  background-color: rgba(0, 0, 0, 0.88);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem; }
 
 /* /////////////// MENU /////////////// */
 .logoHeader {
@@ -399,14 +402,17 @@ header {
   padding-top: 2%;
   margin: 0; }
 
+nav {
+  background-color: rgba(0, 0, 0, 0) !important; }
+
 .navbar {
   padding-left: 0 !important;
-  padding-right: 0 !important; }
+  padding-right: 0 !important;
+  position: absolute; }
 
 .nav-link {
   font-family: 'Montserrat';
   text-decoration: none;
-  /* color: white !important; */
   font-weight: 700;
   font-size: 14px;
   margin-left: 0;
